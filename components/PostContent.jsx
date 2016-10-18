@@ -28,7 +28,7 @@ const PostContent = React.createClass({
           {content}
         </div>
         <div id={this.props.data.postid} className="col-md-12">
-          <a onClick={ this.expandContent }>
+          <a onClick={ this.expandContent } className="pointerise">
             <small>Read more...</small>
           </a>
         </div>
