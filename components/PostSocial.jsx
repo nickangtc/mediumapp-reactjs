@@ -7,7 +7,7 @@ const PostSocial = React.createClass({
         </div>
         <div className="col-md-offset-6"></div>
         <div className="col-md-4 pull-right text-right">
-          {this.props.data['responses-count']} reponses
+          {this.props.data['responses-count']} responses
         </div>
       </div>
     );
