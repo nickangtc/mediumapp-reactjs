@@ -4,6 +4,10 @@ const PostContent = React.createClass({
       expanded: false
     };
   },
+  expandContent: function (ev) {
+    this.setState({ expanded: true });
+    $(ev.target).remove();
+  },
 
   render: function () {
     var content;
@@ -15,13 +19,21 @@ const PostContent = React.createClass({
     }
 
     function summarise (content) {
-      return (content.slice(0, 50)) + '...';
+      return (content.slice(0, 150)) + '...';
     }
 
     return (
-      <div className="col-md-12">
-        {content}
+      <div>
+        <div className="col-md-12">
+          {content}
+        </div>
+        <div id={this.props.data.postid} className="col-md-12">
+          <a onClick={ this.expandContent }>
+            <small>Read more...</small>
+          </a>
+        </div>
       </div>
+
     );
   }
 });

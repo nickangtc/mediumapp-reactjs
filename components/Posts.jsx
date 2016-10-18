@@ -2,6 +2,7 @@ const Posts = React.createClass({
 
   render: function () {
     var post1 = {
+      postid: 1,
       avatar: "../imgs/user.png",
       author: "Jonas Ellison",
       publication: "Higher Thoughts",
@@ -12,6 +13,7 @@ const Posts = React.createClass({
       'responses-count': "4"
     };
     var post2 = {
+      postid: 2,
       avatar: "../imgs/user.png",
       author: "Elysium Tan",
       publication: "Daily Elixir",
