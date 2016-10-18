@@ -31,6 +31,8 @@ const PostSocial = React.createClass({
         <div className="col-md-offset-6"></div>
         <div className="col-md-4 pull-right text-right">
           { this.props.data['responses-count'] } responses
+          <span> </span><span className="glyphicon glyphicon-bookmark"></span>
+          <span> </span><span className="glyphicon glyphicon-menu-down"></span>
         </div>
       </div>
     );

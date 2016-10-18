@@ -6,7 +6,7 @@ const PostHeader = React.createClass({
           <img src={this.props.data.avatar}></img>
         </div>
         <div className="col-md-11">
-          <span>{this.props.data.author} in {this.props.data.publication}</span>
+          <span><a>{this.props.data.author}</a> in <a>{this.props.data.publication}</a></span>
         </div>
       </div>
     );
