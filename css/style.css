@@ -17,3 +17,36 @@ a:hover {
 .pointerise {
   cursor: pointer;
 }
+
+.pusher {
+  margin-top: 30px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.no-border {
+  border: none;
+}
+
+/* ================= */
+/* BOOTSTRAP MODS */
+textarea:focus {
+  box-shadow: none;
+  outline: 0 none;
+}
+
+.btn-mediumstyle, .btn-mediumstyle:hover {
+  border-radius: 999em;
+  color: #00ab6b;
+  border-color: #00ab6b;
+  background-color: transparent;
+}
+
+.btn-mediumstyle-neutral, .btn-mediumstyle-neutral:hover {
+  border-radius: 999em;
+  color: rgba(0,0,0,.44);
+  border-color: rgba(0,0,0,.44);
+  background-color: transparent;
+}

@@ -23,8 +23,13 @@ const Posts = React.createClass({
       likes: "2301",
       'responses-count': "121"
     };
+    var currentUser = {
+      name: "Sergey Page",
+      avatar: "../imgs/user.png"
+    }
     return (
       <div>
+        <NewPostQuick data={currentUser}></NewPostQuick>
         <PostCard id="post-1" data={post1}></PostCard>
         <PostCard id="post-2" data={post2}></PostCard>
       </div>
